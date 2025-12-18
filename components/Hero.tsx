@@ -152,7 +152,7 @@ const Hero: React.FC<HeroProps> = ({ onOpenDemo }) => {
             />
           ))}
           <div className="w-10 h-10 rounded-full border-2 border-white bg-gray-50 flex items-center justify-center shadow-sm">
-            <span className="text-[10px] font-bold text-gray-400">10k+</span>
+            <span className="text-[10px] font-bold text-gray-400">75+</span>
           </div>
         </div>
 
