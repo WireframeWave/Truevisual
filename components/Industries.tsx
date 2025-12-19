@@ -117,9 +117,7 @@ const Industries: React.FC = () => {
                     <p className="text-gray-600 text-lg mb-8 max-w-md leading-relaxed">
                       {industry.desc}
                     </p>
-                    <button className="bg-brand-900 text-white px-8 py-3 rounded-full text-sm font-bold uppercase tracking-widest hover:bg-brand-800 transition-all transform hover:scale-105 shadow-lg shadow-brand-900/20">
-                      View Platform Usage
-                    </button>
+
                   </div>
                 </div>
               </div>
