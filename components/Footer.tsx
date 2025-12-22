@@ -26,16 +26,12 @@ const Footer: React.FC<FooterProps> = ({ onOpenDemo }) => {
               Request a demo
             </button>
             <div className="flex items-center gap-6 mt-4 justify-center">
-              <div className="flex items-center gap-2 opacity-80 hover:opacity-100 transition-opacity">
-                <div className="flex items-center justify-center">
-                  <svg className="w-6 h-6 text-[#3DDC84]" viewBox="0 0 24 24" fill="currentColor"><path d="M3.609 1.814L13.792 12 3.61 22.186a1.996 1.996 0 0 1-2.61-.592 2.003 2.003 0 0 1 .55-2.673l.059-.037V3.308a1.99 1.99 0 0 1 2.001-1.494zM15.208 13.414L19.46 17.666 4.98 23.363a1.995 1.995 0 0 1-2.486-.484L15.208 13.414zm4.252-4.252l-4.252 4.252-12.714-12.714a1.997 1.997 0 0 1 2.485-.484L19.46 6.334z" /></svg>
-                </div>
+              <div className="inline-flex items-center gap-2 opacity-80 hover:opacity-100 transition-opacity">
+                <svg className="w-5 h-5 text-[#3DDC84] -mt-0.5" viewBox="0 0 24 24" fill="currentColor"><path d="M3.609 1.814L13.792 12 3.61 22.186a1.996 1.996 0 0 1-2.61-.592 2.003 2.003 0 0 1 .55-2.673l.059-.037V3.308a1.99 1.99 0 0 1 2.001-1.494zM15.208 13.414L19.46 17.666 4.98 23.363a1.995 1.995 0 0 1-2.486-.484L15.208 13.414zm4.252-4.252l-4.252 4.252-12.714-12.714a1.997 1.997 0 0 1 2.485-.484L19.46 6.334z" /></svg>
                 <span className="font-bold text-lg text-gray-600 uppercase tracking-wide">4.8 Play Store</span>
               </div>
-              <div className="flex items-center gap-2 opacity-80 hover:opacity-100 transition-opacity">
-                <div className="flex items-center justify-center">
-                  <svg className="w-6 h-6 text-gray-900" viewBox="0 0 24 24" fill="currentColor"><path d="M17.636 12.01c.025-2.81 2.296-4.162 2.403-4.218-1.31-1.91-3.344-2.17-4.06-2.193-1.71-.176-3.37.994-4.246.994-.887 0-2.227-.97-3.66-.946-1.884.025-3.623 1.094-4.59 2.78-1.96 3.4-1.674 8.785-.27 10.8a6.52 6.52 0 0 0 2.22 2.92c1.07.697 1.157.48.56-.41.36-.54.89-1.29 1.34-1.99 1.25-1.96 2.4-2.02 2.46-2.03.04.01.07.03.11.04.57 2.07 1.83 4.29 2.68 4.39.85.1 2.11-.93 2.64-2.09.52-1.16 1.37-3.79 1.37-3.79s-.59-1.35-1.04-2.28c-.46-.93-2.04-4.16-2.04-4.16s2.51.15 3.96 2.02c.07.09 2.06-2.3 2.06-2.3zM14.78 4.5c.77-1 1.275-2.32 1.144-3.69-.607.06-2.58.55-3.9 1.85-.357.34-.84.97-1.17 1.8.69.04 1.48-.05 2.15-.3 1.07-.4 1.77.34 1.77.34z" /></svg>
-                </div>
+              <div className="inline-flex items-center gap-2 opacity-80 hover:opacity-100 transition-opacity">
+                <svg className="w-5 h-5 text-gray-900 -mt-0.5" viewBox="0 0 24 24" fill="currentColor"><path d="M17.636 12.01c.025-2.81 2.296-4.162 2.403-4.218-1.31-1.91-3.344-2.17-4.06-2.193-1.71-.176-3.37.994-4.246.994-.887 0-2.227-.97-3.66-.946-1.884.025-3.623 1.094-4.59 2.78-1.96 3.4-1.674 8.785-.27 10.8a6.52 6.52 0 0 0 2.22 2.92c1.07.697 1.157.48.56-.41.36-.54.89-1.29 1.34-1.99 1.25-1.96 2.4-2.02 2.46-2.03.04.01.07.03.11.04.57 2.07 1.83 4.29 2.68 4.39.85.1 2.11-.93 2.64-2.09.52-1.16 1.37-3.79 1.37-3.79s-.59-1.35-1.04-2.28c-.46-.93-2.04-4.16-2.04-4.16s2.51.15 3.96 2.02c.07.09 2.06-2.3 2.06-2.3zM14.78 4.5c.77-1 1.275-2.32 1.144-3.69-.607.06-2.58.55-3.9 1.85-.357.34-.84.97-1.17 1.8.69.04 1.48-.05 2.15-.3 1.07-.4 1.77.34 1.77.34z" /></svg>
                 <span className="font-bold text-lg text-gray-600 uppercase tracking-wide">4.9 App Store</span>
               </div>
             </div>
