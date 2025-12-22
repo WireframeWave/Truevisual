@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { ArrowLeft, Mail, Phone, MapPin, Send } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
+import logo from '../src/assets/logo.png';
 
 const ContactPage: React.FC = () => {
     const navigate = useNavigate();
@@ -38,7 +39,7 @@ const ContactPage: React.FC = () => {
                         Back to Home
                     </button>
                     <div className="ml-auto flex items-center">
-                        <img src="/src/assets/logo.png" alt="TrueVisual" className="h-8 w-auto" />
+                        <img src={logo} alt="TrueVisual" className="h-8 w-auto" />
                     </div>
                 </div>
             </div>

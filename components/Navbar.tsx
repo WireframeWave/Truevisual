@@ -1,6 +1,7 @@
 import React from 'react';
 import { Menu } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
+import logo from '../src/assets/logo.png';
 
 interface NavbarProps {
   onOpenDemo: () => void;
@@ -15,7 +16,7 @@ const Navbar: React.FC<NavbarProps> = ({ onOpenDemo }) => {
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center cursor-pointer" onClick={() => navigate('/')}>
-            <img src="/src/assets/logo.png" alt="TrueVisual" className="h-8 w-auto" />
+            <img src={logo} alt="TrueVisual" className="h-8 w-auto" />
           </div>
 
           {/* Desktop Nav */}

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { ArrowLeft, Mail, Lock, User, Github, Chrome } from 'lucide-react';
+import logo from '../src/assets/logo.png';
 
 const AuthPage: React.FC = () => {
     const [isLogin, setIsLogin] = useState(true);
@@ -10,7 +11,7 @@ const AuthPage: React.FC = () => {
         <div className="min-h-screen bg-gray-50 flex flex-col justify-center py-12 sm:px-6 lg:px-8">
             <div className="sm:mx-auto sm:w-full sm:max-w-md">
                 <div className="flex justify-center mb-6">
-                    <img src="/src/assets/logo.png" alt="TrueVisual" className="h-12 w-auto" />
+                    <img src={logo} alt="TrueVisual" className="h-12 w-auto" />
                 </div>
                 <h2 className="mt-2 text-center text-3xl font-extrabold text-gray-900">
                     {isLogin ? 'Sign in to your account' : 'Start your free trial'}

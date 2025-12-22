@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import logo from '../src/assets/logo.png';
 
 
 interface FooterProps {
@@ -43,7 +44,7 @@ const Footer: React.FC<FooterProps> = ({ onOpenDemo }) => {
           {/* Brand Col */}
           <div className="lg:col-span-2">
             <div className="flex items-center mb-4">
-              <img src="/src/assets/logo.png" alt="TrueVisual" className="h-8 w-auto" />
+              <img src={logo} alt="TrueVisual" className="h-8 w-auto" />
             </div>
             <p className="text-gray-500 text-sm leading-relaxed mb-6 max-w-xs">
               TrueVisual is the leading visual intelligence platform that empowers businesses to verify operations, reduce fraud, and improve compliance through AI-powered visual proofs.
@@ -67,7 +68,7 @@ const Footer: React.FC<FooterProps> = ({ onOpenDemo }) => {
 
             {/* Left: Logo (White) */}
             <div className="relative z-10 text-white">
-              <img src="/src/assets/logo.png" alt="TrueVisual" className="h-8 w-auto brightness-0 invert" />
+              <img src={logo} alt="TrueVisual" className="h-8 w-auto brightness-0 invert" />
             </div>
 
             {/* Right: Text */}
