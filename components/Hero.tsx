@@ -197,7 +197,7 @@ const Hero: React.FC<HeroProps> = ({ onOpenDemo }) => {
       {/* Integrated Company Logo Strip */}
       <div className="border-t border-gray-50 bg-gray-50/30 py-16 overflow-hidden">
         <div className="w-full">
-          <p className="text-center text-sm font-semibold text-gray-500 uppercase tracking-wider mb-10">Brands we have worked with</p>
+          <p className="text-center text-sm font-semibold text-gray-600 tracking-wide mb-10 max-w-3xl mx-auto">Trusted by India's biggest brands for visual accuracy, fast approvals & brand consistency</p>
 
           <div className="flex space-x-16 overflow-hidden">
             {[0, 1].map((index) => (
@@ -207,7 +207,7 @@ const Hero: React.FC<HeroProps> = ({ onOpenDemo }) => {
                     key={`${index}-${idx}`}
                     src={company.logo}
                     alt={`${company.name} logo`}
-                    className={`${company.className} w-auto object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300`}
+                    className={`${company.className} w-auto object-contain opacity-80 hover:opacity-100 transition-all duration-300`}
                   />
                 ))}
               </div>
