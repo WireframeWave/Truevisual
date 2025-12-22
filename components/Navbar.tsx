@@ -1,3 +1,4 @@
+import React from 'react';
 import { Menu } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 
@@ -13,9 +14,8 @@ const Navbar: React.FC<NavbarProps> = ({ onOpenDemo }) => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
-          <div className="flex-shrink-0 flex items-center gap-2 cursor-pointer" onClick={() => navigate('/')}>
-            <div className="w-6 h-6 bg-brand-700 rounded-sm"></div>
-            <span className="font-bold text-xl tracking-tight text-gray-900">TrueVisual</span>
+          <div className="flex-shrink-0 flex items-center cursor-pointer" onClick={() => navigate('/')}>
+            <img src="/src/assets/logo.png" alt="TrueVisual" className="h-8 w-auto" />
           </div>
 
           {/* Desktop Nav */}

@@ -52,9 +52,9 @@ const IndustryIllustration: React.FC<{ type: string }> = ({ type }) => {
     case 'INSURANCE':
       return (
         <div className={commonClasses}>
-          <svg width="200" height="200" viewBox="0 0 200 200" fill="none" className="w-2/3 h-2/3">
-            <path d="M100 40C100 40 60 50 60 90V130C60 160 100 180 100 180C100 180 140 160 140 130V90C140 50 100 40 100 40Z" stroke="currentColor" strokeWidth="2" fill="currentColor" fillOpacity="0.1" />
-            <path d="M85 110L95 120L115 100" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeJoin="round" className="animate-pulse" />
+          <svg width="200" height="200" viewBox="0 0 200 200" fill="none" className="w-1/2 h-1/2">
+            <path d="M100 30C100 30 50 45 50 100V120C50 160 100 190 100 190C100 190 150 160 150 120V100C150 45 100 30 100 30Z" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeJoin="round" />
+            <path d="M80 110L95 125L125 95" stroke="currentColor" strokeWidth="4" strokeLinecap="round" strokeJoin="round" />
           </svg>
         </div>
       );
@@ -92,38 +92,37 @@ const Industries: React.FC = () => {
           {industries.map((industry, idx) => (
             <div
               key={idx}
-              className="relative flex-1 rounded-[3rem] overflow-hidden cursor-pointer transition-all duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] hover:flex-[4] group bg-gray-50 border border-gray-100 hover:bg-brand-50 hover:border-brand-100"
+              className="relative flex-1 rounded-3xl overflow-hidden cursor-pointer transition-all duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] hover:flex-[4] group bg-[#F0F6FF] border border-blue-100/50 hover:bg-[#EBF5FF]"
             >
               {/* Illustration Background */}
-              <div className="text-brand-500">
+              <div className="text-brand-400 group-hover:text-brand-500 transition-colors duration-500">
                 <IndustryIllustration type={industry.id} />
               </div>
 
               {/* Collapsed State Title (Vertical) */}
               <div className="absolute inset-0 flex items-center justify-center lg:group-hover:opacity-0 transition-opacity duration-500 pointer-events-none">
-                <h3 className="lg:[writing-mode:vertical-lr] text-brand-900 font-black tracking-[0.4em] text-sm md:text-base uppercase whitespace-nowrap lg:rotate-180 transform transition-transform duration-700">
+                <h3 className="lg:[writing-mode:vertical-lr] text-brand-900 font-bold tracking-widest text-sm md:text-base uppercase whitespace-nowrap lg:rotate-180 transform transition-transform duration-700">
                   {industry.title}
                 </h3>
               </div>
 
               {/* Expanded State Content */}
-              <div className="absolute inset-0 p-12 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition-opacity duration-700 delay-100">
+              <div className="absolute inset-0 p-8 md:p-12 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition-opacity duration-700 delay-100">
                 <div className="transform translate-y-8 group-hover:translate-y-0 transition-transform duration-700">
-                  <h3 className="text-brand-900 text-3xl font-black uppercase tracking-tight mb-4">
+                  <h3 className="text-[#1e3a8a] text-2xl md:text-3xl font-extrabold uppercase tracking-tight mb-4">
                     {industry.title}
                   </h3>
 
                   <div className="overflow-hidden">
-                    <p className="text-gray-600 text-lg mb-8 max-w-md leading-relaxed">
+                    <p className="text-[#475569] text-base md:text-lg mb-0 max-w-md leading-relaxed font-medium">
                       {industry.desc}
                     </p>
-
                   </div>
                 </div>
               </div>
 
               {/* Decorative Corner Element */}
-              <div className="absolute top-8 right-8 w-12 h-12 border-t-2 border-r-2 border-brand-200 rounded-tr-2xl group-hover:border-brand-500 transition-colors duration-500"></div>
+              <div className="absolute top-6 right-6 w-16 h-16 border-t-2 border-r-2 border-brand-400 rounded-tr-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
             </div>
           ))}
         </div>
