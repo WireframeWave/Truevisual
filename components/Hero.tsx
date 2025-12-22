@@ -141,20 +141,6 @@ const Hero: React.FC<HeroProps> = ({ onOpenDemo }) => {
           <span className="text-xs text-gray-500 font-medium border-l border-gray-100 pl-2 group-hover:text-brand-600">Shape the future with TrueVisual ›</span>
         </div>
 
-        {/* Scaled-down Avatars */}
-        <div className="flex justify-center -space-x-2.5 mb-10">
-          {[1, 2, 3, 4, 5].map((i) => (
-            <img
-              key={i}
-              className="w-10 h-10 rounded-full border-2 border-white shadow-sm object-cover"
-              src={`https://picsum.photos/seed/${i + 60}/80/80`}
-              alt="User"
-            />
-          ))}
-          <div className="w-10 h-10 rounded-full border-2 border-white bg-gray-50 flex items-center justify-center shadow-sm">
-            <span className="text-[10px] font-bold text-gray-400">75+</span>
-          </div>
-        </div>
 
         {/* Refined Headline */}
         <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight text-gray-900 mb-6 max-w-5xl mx-auto leading-[1.1]">
