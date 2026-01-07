@@ -25,6 +25,7 @@ const Navbar: React.FC<NavbarProps> = ({ onOpenDemo }) => {
             <a href="#features" className="text-gray-600 hover:text-brand-700 font-medium cursor-pointer transition-colors">Features</a>
             <a href="#industries" className="text-gray-600 hover:text-brand-700 font-medium cursor-pointer transition-colors">Industries</a>
             <a href="#workflow" className="text-gray-600 hover:text-brand-700 font-medium cursor-pointer transition-colors">Mobile Workflow</a>
+            <button onClick={() => navigate('/case-studies')} className="text-gray-600 hover:text-brand-700 font-medium cursor-pointer transition-colors">Case Studies</button>
           </div>
 
           {/* CTA Buttons */}
