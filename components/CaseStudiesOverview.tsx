@@ -75,13 +75,13 @@ const CaseStudiesOverview: React.FC = () => {
     ];
 
     return (
-        <div className="min-h-screen bg-gradient-to-br from-gray-900 via-brand-950 to-gray-900 font-sans text-white">
+        <div className="min-h-screen bg-white font-sans text-gray-900">
             {/* Nav */}
-            <div className="bg-transparent sticky top-0 z-50 backdrop-blur-md border-b border-white/10">
+            <div className="bg-white shadow-sm sticky top-0 z-50">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center">
                     <button
                         onClick={() => navigate('/')}
-                        className="flex items-center text-gray-300 hover:text-white transition-colors font-medium group"
+                        className="flex items-center text-gray-500 hover:text-brand-700 transition-colors font-medium group"
                     >
                         <ArrowLeft size={20} className="mr-2 group-hover:-translate-x-1 transition-transform" />
                         Back to Home
@@ -93,37 +93,37 @@ const CaseStudiesOverview: React.FC = () => {
             </div>
 
             {/* Hero Section */}
-            <section className="py-20">
+            <section className="py-24 bg-gray-50">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-12">
-                        <span className="inline-block bg-brand-600 text-white px-4 py-2 rounded-lg text-sm font-bold mb-6 uppercase">
+                        <span className="text-brand-600 font-bold tracking-widest uppercase text-xs mb-4 block">
                             TRUEVISUAL ENTERPRISE SOLUTIONS
                         </span>
-                        <h1 className="text-5xl md:text-6xl font-extrabold mb-6">
+                        <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6">
                             Enterprise
                             <br />
-                            <span className="text-brand-400">Case Studies</span>
+                            <span className="text-brand-600">Case Studies</span>
                         </h1>
-                        <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+                        <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
                             Transforming execution visibility across Retail, Banking, Food Tech, and Media through computer vision & AI.
                         </p>
                     </div>
 
                     {/* Industry Tags */}
-                    <div className="flex flex-wrap justify-center gap-3 mb-16">
-                        <span className="px-4 py-2 bg-white/10 rounded-full text-sm font-medium backdrop-blur-sm border border-white/20">
+                    <div className="flex flex-wrap justify-center gap-3">
+                        <span className="px-4 py-2 bg-white rounded-full text-sm font-medium border border-gray-200 text-gray-700">
                             🛍️ Retail
                         </span>
-                        <span className="px-4 py-2 bg-white/10 rounded-full text-sm font-medium backdrop-blur-sm border border-white/20">
+                        <span className="px-4 py-2 bg-white rounded-full text-sm font-medium border border-gray-200 text-gray-700">
                             🏦 Banking
                         </span>
-                        <span className="px-4 py-2 bg-white/10 rounded-full text-sm font-medium backdrop-blur-sm border border-white/20">
+                        <span className="px-4 py-2 bg-white rounded-full text-sm font-medium border border-gray-200 text-gray-700">
                             🍔 Logistics
                         </span>
-                        <span className="px-4 py-2 bg-white/10 rounded-full text-sm font-medium backdrop-blur-sm border border-white/20">
+                        <span className="px-4 py-2 bg-white rounded-full text-sm font-medium border border-gray-200 text-gray-700">
                             📺 DTH Services
                         </span>
-                        <span className="px-4 py-2 bg-white/10 rounded-full text-sm font-medium backdrop-blur-sm border border-white/20">
+                        <span className="px-4 py-2 bg-white rounded-full text-sm font-medium border border-gray-200 text-gray-700">
                             ▶️ OTT Media
                         </span>
                     </div>
@@ -131,57 +131,66 @@ const CaseStudiesOverview: React.FC = () => {
             </section>
 
             {/* Executive Summary */}
-            <section className="py-12 bg-white/5 backdrop-blur-sm border-y border-white/10">
+            <section className="py-16 bg-white">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="text-center mb-8">
-                        <span className="inline-block bg-brand-600 text-white px-3 py-1 rounded text-xs font-bold uppercase">
+                    <div className="text-center mb-12">
+                        <span className="text-brand-600 font-bold tracking-widest uppercase text-xs mb-4 block">
                             Executive Summary
                         </span>
-                        <h2 className="text-3xl font-bold mt-4 mb-6">Cross-Industry Impact Summary</h2>
-                        <p className="text-gray-300 mb-2">Delivering control & visibility at scale</p>
-                        <p className="text-lg font-semibold text-brand-400">5 Enterprise Leaders</p>
+                        <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4">
+                            Cross-Industry Impact Summary
+                        </h2>
+                        <p className="text-gray-600 mb-2">Delivering control & visibility at scale</p>
+                        <p className="text-lg font-semibold text-brand-600">5 Enterprise Leaders</p>
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                        <div className="bg-gray-800/50 rounded-2xl p-6 border border-white/10">
-                            <div className="text-brand-400 mb-3">👁️</div>
-                            <h3 className="font-bold mb-2">Total Visibility</h3>
-                            <p className="text-sm text-gray-400">From 8000+ retail stores to remote village walls, nothing is hidden.</p>
+                        <div className="bg-gradient-to-br from-brand-50 to-blue-50 rounded-2xl p-6 border border-brand-100">
+                            <div className="text-3xl mb-3">👁️</div>
+                            <h3 className="font-bold text-gray-900 mb-2">Total Visibility</h3>
+                            <p className="text-sm text-gray-600">From 8000+ retail stores to remote village walls, nothing is hidden.</p>
                         </div>
-                        <div className="bg-gray-800/50 rounded-2xl p-6 border border-white/10">
-                            <div className="text-green-400 mb-3">🛡️</div>
-                            <h3 className="font-bold mb-2">Fraud Elimination</h3>
-                            <p className="text-sm text-gray-400">AI detection reduced fake claims by up to 60% and stopped duplicates.</p>
+                        <div className="bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl p-6 border border-green-100">
+                            <div className="text-3xl mb-3">🛡️</div>
+                            <h3 className="font-bold text-gray-900 mb-2">Fraud Elimination</h3>
+                            <p className="text-sm text-gray-600">AI detection reduced fake claims by up to 60% and stopped duplicates.</p>
                         </div>
-                        <div className="bg-gray-800/50 rounded-2xl p-6 border border-white/10">
-                            <div className="text-purple-400 mb-3">⏱️</div>
-                            <h3 className="font-bold mb-2">Time Compliance</h3>
-                            <p className="text-sm text-gray-400">Enforced campaign duration windows to maximize media ROI.</p>
+                        <div className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-2xl p-6 border border-purple-100">
+                            <div className="text-3xl mb-3">⏱️</div>
+                            <h3 className="font-bold text-gray-900 mb-2">Time Compliance</h3>
+                            <p className="text-sm text-gray-600">Enforced campaign duration windows to maximize media ROI.</p>
                         </div>
-                        <div className="bg-gray-800/50 rounded-2xl p-6 border border-white/10">
-                            <div className="text-blue-400 mb-3">✓</div>
-                            <h3 className="font-bold mb-2">Brand Consistency</h3>
-                            <p className="text-sm text-gray-400">Standardized execution across 50+ branches and thousands of vehicles.</p>
+                        <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-6 border border-blue-100">
+                            <div className="text-3xl mb-3">✓</div>
+                            <h3 className="font-bold text-gray-900 mb-2">Brand Consistency</h3>
+                            <p className="text-sm text-gray-600">Standardized execution across 50+ branches and thousands of vehicles.</p>
                         </div>
                     </div>
                 </div>
             </section>
 
             {/* Client Success Snapshots */}
-            <section className="py-20">
+            <section className="py-20 bg-gray-50">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <h2 className="text-2xl font-bold mb-12 uppercase tracking-wider text-gray-400">Client Success Snapshots</h2>
+                    <div className="text-center mb-12">
+                        <span className="text-brand-600 font-bold tracking-widest uppercase text-xs mb-4 block">
+                            Client Success Stories
+                        </span>
+                        <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900">
+                            Enterprise Case Studies
+                        </h2>
+                    </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {caseStudies.map((study) => (
                             <div
                                 key={study.id}
                                 onClick={() => navigate(study.path)}
-                                className="group relative bg-gradient-to-br from-gray-800 to-gray-900 rounded-3xl p-8 border border-white/10 hover:border-brand-400/50 transition-all duration-300 cursor-pointer hover:scale-105"
+                                className="group relative bg-white rounded-3xl p-8 border border-gray-200 hover:border-brand-400 hover:shadow-xl transition-all duration-300 cursor-pointer"
                             >
                                 {/* Category Badge */}
                                 <div className="mb-6">
-                                    <span className={`inline-block ${study.categoryColor} text-white px-3 py-1 rounded text-xs font-bold uppercase`}>
+                                    <span className={`inline-block ${study.categoryColor} text-white px-3 py-1 rounded-lg text-xs font-bold uppercase`}>
                                         {study.category}
                                     </span>
                                 </div>
@@ -190,21 +199,21 @@ const CaseStudiesOverview: React.FC = () => {
                                 <div className="text-5xl mb-4">{study.icon}</div>
 
                                 {/* Title */}
-                                <h3 className="text-2xl font-bold mb-2">{study.title}</h3>
-                                <p className="text-gray-400 mb-6">{study.subtitle}</p>
+                                <h3 className="text-2xl font-bold text-gray-900 mb-2">{study.title}</h3>
+                                <p className="text-gray-600 mb-6">{study.subtitle}</p>
 
                                 {/* Metrics */}
                                 <div className="space-y-3 mb-6">
                                     {study.metrics.map((metric, idx) => (
                                         <div key={idx} className="flex items-baseline gap-2">
-                                            <span className="text-2xl font-bold text-brand-400">{metric.value}</span>
-                                            <span className="text-sm text-gray-400">{metric.label}</span>
+                                            <span className="text-2xl font-bold text-brand-600">{metric.value}</span>
+                                            <span className="text-sm text-gray-600">{metric.label}</span>
                                         </div>
                                     ))}
                                 </div>
 
                                 {/* Arrow */}
-                                <div className="absolute bottom-8 right-8 text-brand-400 opacity-0 group-hover:opacity-100 transition-opacity">
+                                <div className="absolute bottom-8 right-8 text-brand-600 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all">
                                     <ArrowRight size={24} />
                                 </div>
                             </div>
@@ -214,9 +223,9 @@ const CaseStudiesOverview: React.FC = () => {
             </section>
 
             {/* Footer */}
-            <div className="bg-white/5 border-t border-white/10 py-12 text-center">
-                <p className="text-gray-400 mb-6">Ready to transform your field operations?</p>
-                <div className="flex justify-center gap-4 text-sm font-medium text-gray-500">
+            <div className="bg-white border-t border-gray-100 py-12 text-center">
+                <p className="text-gray-500 mb-6">Ready to transform your field operations?</p>
+                <div className="flex justify-center gap-4 text-sm font-medium text-gray-400">
                     <span>© 2025 TrueVisual Inc.</span>
                 </div>
             </div>
