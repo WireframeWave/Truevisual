@@ -34,7 +34,7 @@ const YESBANKCaseStudy: React.FC = () => {
                     </div>
                     <div className="text-center mb-12">
                         <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4">
-                            YES BANK × Truevisual
+                            Major Banking Institution × Truevisual
                         </h1>
                         <p className="text-xl text-gray-600">
                             Branch-Level Brand Consistency & Compliance

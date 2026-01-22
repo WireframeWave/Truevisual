@@ -34,7 +34,7 @@ const LifestyleCaseStudy: React.FC = () => {
                     </div>
                     <div className="text-center mb-12">
                         <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4">
-                            Lifestyle × Truevisual
+                            Leading Retail Chain × Truevisual
                         </h1>
                         <p className="text-xl text-gray-600">
                             Inventory Discovery & Campaign Auditing
@@ -66,7 +66,7 @@ const LifestyleCaseStudy: React.FC = () => {
                         </h2>
                     </div>
                     <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-                        Lifestyle operates large-format stores across multiple malls with premium ad inventories (facades, pillars, trial rooms). Management was chaotic and manual.
+                        A leading retail chain operates large-format stores across multiple malls with premium ad inventories (facades, pillars, trial rooms). Management was chaotic and manual.
                     </p>
 
                     <div className="space-y-4">

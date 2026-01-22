@@ -9,7 +9,7 @@ const CaseStudiesOverview: React.FC = () => {
     const caseStudies = [
         {
             id: 'lifestyle',
-            title: 'Lifestyle',
+            title: 'Leading Retail Chain',
             subtitle: 'Inventory Discovery',
             category: 'RETAIL CASE STUDY',
             categoryColor: 'bg-red-500',
@@ -22,7 +22,7 @@ const CaseStudiesOverview: React.FC = () => {
         },
         {
             id: 'yes-bank',
-            title: 'YES BANK',
+            title: 'Major Banking Institution',
             subtitle: 'Branch Compliance',
             category: 'BANKING CASE STUDY',
             categoryColor: 'bg-blue-600',
@@ -35,7 +35,7 @@ const CaseStudiesOverview: React.FC = () => {
         },
         {
             id: 'swiggy',
-            title: 'Swiggy',
+            title: 'Big Food Tech Company',
             subtitle: 'Auto Branding',
             category: 'FOOD TECH CASE STUDY',
             categoryColor: 'bg-orange-500',
@@ -48,7 +48,7 @@ const CaseStudiesOverview: React.FC = () => {
         },
         {
             id: 'tata-play',
-            title: 'Tata Play',
+            title: 'DTH Service Provider',
             subtitle: 'Wall Painting',
             category: 'DTH CASE STUDY',
             categoryColor: 'bg-pink-600',
@@ -61,7 +61,7 @@ const CaseStudiesOverview: React.FC = () => {
         },
         {
             id: 'zee5',
-            title: 'ZEE5',
+            title: 'OTT Media Platform',
             subtitle: 'Hoarding Verify',
             category: 'MEDIA CASE STUDY',
             categoryColor: 'bg-purple-600',
