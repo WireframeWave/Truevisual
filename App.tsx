@@ -11,6 +11,8 @@ import ZEE5CaseStudy from './components/ZEE5CaseStudy';
 import SwiggyCaseStudy from './components/SwiggyCaseStudy';
 import YESBANKCaseStudy from './components/YESBANKCaseStudy';
 import LifestyleCaseStudy from './components/LifestyleCaseStudy';
+import DeleteAccount from './components/DeleteAccount';
+import Copyright from './components/Copyright';
 
 const App: React.FC = () => {
   return (
@@ -27,6 +29,8 @@ const App: React.FC = () => {
         <Route path="/case-study/swiggy" element={<SwiggyCaseStudy />} />
         <Route path="/case-study/yes-bank" element={<YESBANKCaseStudy />} />
         <Route path="/case-study/lifestyle" element={<LifestyleCaseStudy />} />
+        <Route path="/delete-account" element={<DeleteAccount />} />
+        <Route path="/copyright" element={<Copyright />} />
       </Routes>
     </Router>
   );
