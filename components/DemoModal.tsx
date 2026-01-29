@@ -98,7 +98,9 @@ const DemoModal: React.FC<DemoModalProps> = ({ isOpen, onClose }) => {
                             id="phone"
                             name="phone"
                             className="w-full px-4 py-2 border border-gray-200 rounded-lg focus:ring-2 focus:ring-brand-500 focus:border-transparent outline-none transition-all"
-                            placeholder="+1 (555) 000-0000"
+                            placeholder="+91 XXXXX XXXXX"
+                            pattern="[+]?91?[6-9][0-9]{9}"
+                            title="Please enter a valid Indian phone number"
                             value={formData.phone}
                             onChange={handleChange}
                         />
