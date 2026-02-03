@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import LandingPage from './components/LandingPage';
 import AuthPage from './components/AuthPage';
 import PrivacyPolicy from './components/PrivacyPolicy';
@@ -30,6 +30,7 @@ const App: React.FC = () => {
         <Route path="/case-study/yes-bank" element={<YESBANKCaseStudy />} />
         <Route path="/case-study/lifestyle" element={<LifestyleCaseStudy />} />
         <Route path="/account-deletion" element={<DeleteAccount />} />
+        <Route path="/delete-account" element={<Navigate to="/account-deletion" replace />} />
         <Route path="/copyright" element={<Copyright />} />
       </Routes>
     </Router>
